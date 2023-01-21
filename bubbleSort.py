@@ -8,9 +8,10 @@ def bubbleSort(num):
             """this time i will be the last element index (since the step is negative); for this reason, the unsorted range will be lessening upto 0 index to 1 
             index elements unlike in Selection Sort where its last unsorted range is the last index element and its adjacent"""
             if num[j] > num[j+1]: # will compare adjacent elements (this will implement putting the biggest quantity value at the last index first upon ordering)
-                temp = num[j]
-                num[j] = num[j+1]
-                num[j+1] = temp
+                # temp = num[j]
+                # num[j] = num[j+1]
+                # num[j+1] = temp
+                num[j], num[j+1] = num[j+1], num[j] # From Nikita Sharma's comment on the yt vid, python allows easy swapping without a third variable
 
 list = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print("Unsorted list: ", list)
