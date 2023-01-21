@@ -15,3 +15,11 @@ def bubbleSort(num):
 
 list = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print("Unsorted list: ", list)
+
+bubbleSort(list)
+print("In ascending order:", end=" ") # By default Python‘s print() function ends with a newline. The end parameter in the print function is used to add any string. 
+# At the end of the output of the print statement in python. Passing the whitespace to the end parameter (end=‘ ‘) indicates that the end character has to be 
+# identified by whitespace and not a newline.
+for i in range(len(list)):
+    print("%d" % list[i], end=" ") # The %d operator is used as a placeholder to specify integer values, decimals, or numbers. It allows us to print numbers within 
+    # strings or other values. The %d operator is put where the integer is to be specified. 
