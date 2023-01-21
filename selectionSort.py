@@ -22,9 +22,13 @@ def selectionSort (nums):
         nums[i] = nums[minIndex] # the new minimum element with determined index position will be the first element of the list (recognized as sorted); other elements to follow on index position with the help of i increment of the first for loop
         nums[minIndex] = temp # the old first element of the unsorted range will be swapped at the old index position of the new minimum element found
 
-        print(nums)
+        # this will print out every determined minimum sequence for every index position
+        #print(nums)
+        
 
 
 list = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print(list)
 selectionSort(list)
+print("In ascensding order", list)
+
