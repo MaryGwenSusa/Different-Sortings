@@ -11,7 +11,9 @@ def bubbleSort(num):
     
         for j in range(i):
             """this time i will be the last element index (since the step is negative); for this reason, the unsorted range will be lessening upto 0 index to 1 
-            index elements unlike in Selection Sort where its last unsorted range is the last index element and its adjacent"""
+            index elements unlike in Selection Sort where its last unsorted range is the last index element and its adjacent
+            
+            - to sort in descending order simply change the '<' to '>' then the lesser value will be swapped towards the right"""
             if num[j] > num[j+1]: # will compare adjacent elements (this will implement putting the biggest quantity value at the last index first upon ordering)
                 # temp = num[j]
                 # num[j] = num[j+1]
@@ -21,7 +23,8 @@ def bubbleSort(num):
                 # this will print out the specific elements whenever an element is greater than its adjacent 
                 print("Swapped: {} with {}".format(num[j], num[j+1])) # {} is a placeholder in Python String Format
 
-
+        # this will print out whenever all elements have been compared to its adjacent elements
+        print(num) 
 
 
 
