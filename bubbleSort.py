@@ -1,9 +1,5 @@
 """Having a list with 10 random numbers"""
 
-def properPrint(nums):
-    for i in range(len(nums)):
-        print(nums[i], end=" ")
-
 def bubbleSort(num):
     """using the argument for the range parameters so the number of the elements in the list can be easily changed and considering the 0 index value by '-1'
     plus since the last comparison between the last and second to the last position will satisfy the order already"""
