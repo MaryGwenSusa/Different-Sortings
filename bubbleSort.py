@@ -23,11 +23,14 @@ def bubbleSort(num):
                 # this will print out the specific elements whenever an element is greater than its adjacent 
                 print("Swapped: {} with {}".format(num[j], num[j+1])) # {} is a placeholder in Python String Format
 
-                # this will print out every comparison of adjacent elements (sequence)
-                print(num)
-                
+                # this will print out whenever the if condition has been satisfied
+                #print(num)
+            
+            # this will print out every comparison of adjacent elements (sequence)
+            print(num)
+
         # this will print out whenever all elements have been compared to its adjacent elements
-        print(num) 
+        #print(num) 
 
 
 
