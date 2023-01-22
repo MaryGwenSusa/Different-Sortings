@@ -12,7 +12,7 @@ def selectionSort (nums):
             """select the minimum element in every iteration
             
             - to sort in descending order simply change the '<' to '>'; then the placeholder will be for the maximum element"""
-            if nums[j] > nums[minIndex]: # if the element at value of j index is less than the first element of the unsorted range (which is the minIndex)
+            if nums[j] < nums[minIndex]: # if the element at value of j index is less than the first element of the unsorted range (which is the minIndex)
                 minIndex = j # then j is the new index position of minimum element
 
         """swap the minimum element with the first element of the unsorted part"""
@@ -30,7 +30,7 @@ def selectionSort (nums):
 list = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print(list)
 selectionSort(list)
-# print("In ascending order", list)
-print("In descending order", list)
+print("In ascending order", list)
+#print("In descending order", list)
 
 
