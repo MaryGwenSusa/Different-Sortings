@@ -23,4 +23,10 @@ def insertionSort(list): #for loop and while loop nested this time
 
 assignedNum = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print("Unsorted list:", assignedNum)
-
+insertionSort(assignedNum)
+#print("In Descending Order:", end=" ")
+print("In ascending order:", end=" ") # By default Python‘s print() function ends with a newline. The end parameter in the print function is used to add any string. 
+# At the end of the output of the print statement in python. Passing the whitespace to the end parameter (end=‘ ‘) indicates that the end character has to be 
+# identified by whitespace and not a newline.
+for i in range(len(assignedNum)):
+    print(assignedNum[i], end=" ")
