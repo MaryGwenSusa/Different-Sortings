@@ -22,7 +22,10 @@ def insertionSort(list): #for loop and while loop nested this time
                 break
 
             # this would print out sequence of every swapping of value index element
-            print(list)
+            #print(list)
+        
+        # this would print out sequence whenever comparion/s to the left has been interrupted 
+        print(list)
         
 
 assignedNum = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
