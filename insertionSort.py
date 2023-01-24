@@ -17,9 +17,13 @@ def insertionSort(list): #for loop and while loop nested this time
                 print("Swapped: {} with {}".format(list[i+1] , list[i])) # {} is a placeholder in Python String Format
 
                 i -= 1 # intended to continue comparisons of the left indexes
-
+                
             else:
                 break
+
+            # this would print out sequence of every swapping of value index element
+            print(list)
+        
 
 assignedNum = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
 print("Unsorted list:", assignedNum)
