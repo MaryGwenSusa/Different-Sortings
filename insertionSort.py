@@ -1,15 +1,9 @@
-def insertionSort(list):
-    for index in range(1,len(list)):
+"""Having a list with 10 random numbers"""
+
+def insertionSort(list): #for loop and while loop nested this time
+    for index in range(1,len(list)): #the variable index first value is 1 since start parameter is 1 so it would pertain to the 1st index element
         value = list[index]
-        i = index - 1
-        while i >= 0:
-            if value < list[i]:
-                list[i+1] = list[i] #shift number in slot i right to slot i+1
-                list[i] = value #shift value left into slot i
-                i = i - 1
-            else:
-                break
+
 
 assignedNum = [76, 13, 88, 26, 9, 51, 62, 22, 63, 31]
-insertionSort(assignedNum)
-print(assignedNum)
+print("Unsorted list:", assignedNum)
