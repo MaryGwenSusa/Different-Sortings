@@ -32,6 +32,13 @@ def mergeSort(lst):
                 lst[k] = leftList[i] # assign the element of the leftList as an element to the sorted list parameter
                 i += 1 # increment leftList element indexs
 
+            else:
+                lst[k] = rightList[j] # else assign the element of the rightList as an element to the sorted list parameter
+                j += 1 # increment rightlist element index
+            k += 1 # increment sorted list or the merged list parameter element index
+
+            #print("Merged & Sorted leaf/branch: ", lst)
+
 
 # Print the array
 def printList(lst):
