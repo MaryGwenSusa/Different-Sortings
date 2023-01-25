@@ -15,8 +15,8 @@ def mergeSort(lst):
         # rightList = lst[len(lst)//2:len(lst)]
 
         #  this will print out every division of the list until having 1 element each
-        #print("Left leaf: ", leftList)
-        #print("Right leaf: ", rightList)
+        print("Left leaf: ", leftList)
+        print("Right leaf: ", rightList)
 
         # recursion: continuously divide the list until there will be one/two child nodes at the last level
         mergeSort(leftList)
@@ -37,24 +37,24 @@ def mergeSort(lst):
                 j += 1 # increment rightlist element index
             k += 1 # increment sorted list or the merged list parameter element index
 
-            #print("Merged & Sorted leaf/branch: ", lst)
+            print("Merged & Sorted leaf/branch: ", lst)
         
         while i < len(leftList): # but if only the left list still has an element--exectute the same code above
             lst[k] = leftList[i]
             i += 1
             k += 1
 
-            #print("Merged & Sorted LEFT leaf/branch: ", lst) 
+            print("Merged & Sorted LEFT leaf/branch: ", lst) 
 
         while j < len(rightList): # but if only the right list still has an element--exectute the same code above
             lst[k] = rightList[j]
             j += 1
             k += 1
 
-            #print("Merged & Sorted RIGHT leaf/branch: ", lst) 
+            print("Merged & Sorted RIGHT leaf/branch: ", lst) 
 
         # this will print out every sorted and merged final list division composing of 2 elements minimum
-        print(lst)
+        #print(lst)
 
 # Print the array
 def printList(lst):
