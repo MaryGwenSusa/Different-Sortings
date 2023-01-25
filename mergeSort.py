@@ -16,7 +16,11 @@ def mergeSort(lst):
 
         #  this will print out every division of the list until having 1 element each
         #print("Left leaf: ", leftList)
-        #print("Right leaf: ", rightList)ss
+        #print("Right leaf: ", rightList)
+
+        # recursion: continuously divide the list until there will be one/two child nodes at the last level
+        mergeSort(leftList)
+        mergeSort(rightList)
 
 
 # Print the array
