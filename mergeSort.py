@@ -46,6 +46,16 @@ def mergeSort(lst):
 
             #print("Merged & Sorted LEFT leaf/branch: ", lst) 
 
+        while j < len(rightList): # but if only the right list still has an element--exectute the same code above
+            lst[k] = rightList[j]
+            j += 1
+            k += 1
+
+            #print("Merged & Sorted RIGHT leaf/branch: ", lst) 
+
+        # this will print out every sorted and merged final list division composing of 2 elements minimum
+        print(lst)
+
 # Print the array
 def printList(lst):
     for i in range(len(lst)):
