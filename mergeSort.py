@@ -22,6 +22,16 @@ def mergeSort(lst):
         mergeSort(leftList)
         mergeSort(rightList)
 
+        # merging part
+        # initialized variables for iterators; compare leftmost indexes and stores accordingly to the leftmost
+        i = 0
+        j = 0
+        k = 0
+        while i < len(leftList) and j < len(rightList): # while the divided lists still has comparable element each
+            if leftList[i] < rightList[j]: # then if leftList element is less than rightList element
+                lst[k] = leftList[i] # assign the element of the leftList as an element to the sorted list parameter
+                i += 1 # increment leftList element indexs
+
 
 # Print the array
 def printList(lst):
