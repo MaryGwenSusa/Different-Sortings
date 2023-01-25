@@ -38,7 +38,13 @@ def mergeSort(lst):
             k += 1 # increment sorted list or the merged list parameter element index
 
             #print("Merged & Sorted leaf/branch: ", lst)
+        
+        while i < len(leftList): # but if only the left list still has an element--exectute the same code above
+            lst[k] = leftList[i]
+            i += 1
+            k += 1
 
+            #print("Merged & Sorted LEFT leaf/branch: ", lst) 
 
 # Print the array
 def printList(lst):
