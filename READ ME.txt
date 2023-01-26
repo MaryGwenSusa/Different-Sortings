@@ -1,0 +1,17 @@
+I am a 2nd year college student under Bachelor of Science in Computer Engineering. This repository is for familiarization 
+of Different Sorting Algorithms in Python. Here are my references:
+Selection Sort
+https://www.youtube.com/watch?v=5KjapFQNxUo
+Bubble Sort
+https://www.youtube.com/watch?v=Vca808JTbI8
+Insertion Sort
+https://www.youtube.com/watch?v=6pyeMmJTefg
+Merge Sort
+https://www.youtube.com/watch?v=cVZMah9kEjI
+Quick Sort
+https://www.youtube.com/watch?v=9KBwdDEwal8
+
+Additional:
+https://www.geeksforgeeks.org/python-program-for-bubble-sort/
+https://www.stechies.com/bubble-sort-python/
+https://www.programiz.com/dsa/merge-sort
