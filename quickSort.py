@@ -22,6 +22,15 @@ def quickSort(arr, left, right): # left = 0; right = 9 on first call--refers to 
         quickSort(arr, left, partition_pos - 1) # less of the pivot element; parameter continuously decrement
         quickSort(arr, partition_pos + 1, right) # subarrays contain > pivot; parameter continuously increment
 
+def partition(arr, left, right):
+    """returns index of pivot element after first step of quick sort"""
+    i = left # left subarray
+    j = right - 1 # right subarray
+    pivot = arr[right] # rightmost elmenet
+
+    while i < j: # while i and j have not crossed yet--indicates we have already moved all the elements to their correct side of the pivot
+        while i < right and arr[i] < pivot: # checks if the i element is on the left subarray and validates that it should be there since it is less than the pivot
+            i += 1 #move onto the right index from the left
 
 # Print the array
 def printList(lst):
