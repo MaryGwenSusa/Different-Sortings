@@ -31,6 +31,23 @@ def partition(arr, left, right):
     while i < j: # while i and j have not crossed yet--indicates we have already moved all the elements to their correct side of the pivot
         while i < right and arr[i] < pivot: # checks if the i element is on the left subarray and validates that it should be there since it is less than the pivot
             i += 1 #move onto the right index from the left
+        
+        while j > left and arr[j] >= pivot: # while j index not yet on the left subarray and is j element > than pivot then it should be there
+            j -= 1 # move j to the left index
+
+        # We either found a value for both j and i that is out of order or i is higher than j, in which case we exit the loop
+
+        # if the comparison for the left subarray were not satisfied and then consequently the comparison for the right subarray is not anymore then--compare their indexes
+        # and swith places
+        if i < j: # did i and j cross yet
+            arr[i], arr[j] = arr[j], arr[i]
+            print(arr)
+
+    if arr[i] > pivot: 
+        arr[i], arr[right] = arr[right], arr[i]
+        print(arr)
+
+    return i # this is the left boundary
 
 # Print the array
 def printList(lst):
