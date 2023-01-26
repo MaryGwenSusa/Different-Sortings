@@ -64,7 +64,7 @@ if __name__ == '__main__': #executes coroutine on the default event loop
     print("Unsorted List:", end=" ")
     printList(assignedNum)
 
-    
+    quickSort(assignedNum, 0, len(assignedNum) - 1)
 
     print("Sorted Merged List:", end=" ")
     printList(assignedNum)
