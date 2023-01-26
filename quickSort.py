@@ -41,10 +41,15 @@ def partition(arr, left, right):
         # and swith places
         if i < j: # did i and j cross yet
             arr[i], arr[j] = arr[j], arr[i]
+
+            print("Swapped: {} with {}".format(arr[i] , arr[j])) # {} is a placeholder in Python String Format
             print(arr)
 
     if arr[i] > pivot: 
         arr[i], arr[right] = arr[right], arr[i]
+
+        
+        print("Swapped: {} with {}".format(arr[i] , arr[right])) # {} is a placeholder in Python String Format
         print(arr)
 
     return i # this is the left boundary
