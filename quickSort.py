@@ -15,6 +15,14 @@ Quick Sort - Divide and Conquer Algorithm
 
 this recursion goes on until the area size of a subarray is 1"""
 
+def quickSort(arr, left, right): # left = 0; right = 9 on first call--refers to the index; serves as boundary
+    # in this case, the element on the last index will be the first pivot
+    if left < right: #subarray atleast contains two elements
+        partition_pos = partition(arr, left, right)
+        quickSort(arr, left, partition_pos - 1) # less of the pivot element; parameter continuously decrement
+        quickSort(arr, partition_pos + 1, right) # subarrays contain > pivot; parameter continuously increment
+
+
 # Print the array
 def printList(lst):
     for i in range(len(lst)):
